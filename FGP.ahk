@@ -89,7 +89,7 @@ FGP_Num(PropName) {
  *      Gets a file property value.
  *  Parameters
  *      FilePath    - The full path of a file.
- *      Property    - Either the name or number of a property
+ *      Property    - Either the name or number of a property.
  *  Returns
  *      If succesful the file property value is returned. Otherwise:
  *      0           - The property is blank.
