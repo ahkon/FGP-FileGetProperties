@@ -1,4 +1,5 @@
 #NoEnv
+#Include %A_ScriptDir%\FGP.ahk
 SetBatchLines, -1
 FileSelectFile, FilePath                    ; Select a file to use for this example.
 
@@ -8,6 +9,7 @@ PropVal1 := FGP_Value(FilePath, PropName)   ; Gets a file property value by name
 PropVal2 := FGP_Value(FilePath, PropNum)    ; Gets a file property value by number.
 PropList := FGP_List(FilePath)              ; Gets all of a file's non-blank properties.
 
-MsgBox, % PropName ":`t" PropVal1           ; Display the results.
-. "`n" PropNum ":`t" PropVal2
-. "`n`nList:`n" PropList.CSV
+MsgBox, % PropName ":`t" PropVal1 "`n"      ; Display the results.
+        . PropNum  ":`t" PropVal2 "`n`n"
+        . "List:`n"
+        . PropList.CSV
